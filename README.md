@@ -48,6 +48,20 @@ See [Progess Tracking](./progress.md)
 ## Installation
 
 
+We'll figure this out later. Not sure which direction we're going right now.
+If this is a ML project or a nice UI with a bunch of API calls. We'll see.
+
+
+**Devs - For Mac M1 Users**
+
+This requirements file is for M1! 
+This uses tensorflow-macos which is for M1 chip only!
+If you use something else, figure it out yourself. You just need to run tensorflow.
+
+Install Conda:
+[Conda](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html)
+
+
 Python version:  
 ```
 Python 3.10.9
@@ -61,9 +75,11 @@ cd learning_learning
 
 Python venv, create and activate
 ```
-python3 -m venv ./venv
-. venv/bin/activate
+conda create --name <env_name> --file requirements.txt
+conda activate <env_name>
 ```
+
+**or make your environment and install with pip**
 
 Install Requirements
 ```

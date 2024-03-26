@@ -3,3 +3,6 @@ venv/
 
 # Apple Folders
 .DS_Store
+
+# Jupyter notebooks
+.ipynb_checkpoints/
