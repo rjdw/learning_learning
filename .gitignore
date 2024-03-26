@@ -1,2 +1,5 @@
 # Python Venv
 venv/
+
+# Apple Folders
+.DS_Store
