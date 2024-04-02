@@ -14,12 +14,10 @@ We going to try and optimize online education.
 
 <a id="description"></a>
 ## Description
-Optimized online learning platform.
+Current online learning platforms such as coursera, youtube, or khan academy are great resources that provide quality eduation for students such that they can learn material at their own time and pace. However, the material does not take the feedback from the user into account of the pace, material, and checkpoints and in place. Instead the student is expected to pace themselves throughout the entire process and the intermittent check ups may not sufficiently provide the student with more practice. Each student requires different learning strategies and as such, the teaching platform should also be able to adapt its teaching, material exposure, and questions to maximally teach the student.
 
 Using existing Coursera or YouTube courses.
-Have the ability to plan out lessons for available time. Review topics where
-bad performance is detected. Attention tracking, give breaks. Rewind video, or
-review topics from earlier in lesson. Biometric monitoring, etc.
+Have the ability to plan out lessons for available time. Review topics where bad performance is detected, meaning indicators that may mean the student is not absorbing information optimally. Attention tracking, give breaks. Rewind video, or review topics from earlier in lesson. Biometric monitoring, etc. Eventually, we want to be able to provide each student with a personalized learning plan of material, quizzes, etc. that will optimize their learning. Can even try to characterize what kind of learner they are, such as visual, verbal, or what types of exercises they respond best to so that when they can begin to build their own personalized plans for independent study.
 
 <a id="progress"></a>
 ## Current Progress  
