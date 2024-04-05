@@ -30,8 +30,13 @@ See [Progess Tracking](./progress.md)
 - Week 1:
     - Figure out timeline
     - Look into field
-    - Write general pipelines
 - Week 2:
+    - pomodoro method
+        - simplest methodology without need for ML
+        - implement this first and see what's up after
+    - github hosted website to start
+        - simple to use
+        - free to host
 
 - Week 3:
 
