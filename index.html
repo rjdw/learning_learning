@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dynamic YouTube Video Player</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Learning Learning - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-    <input type="text" id="youtubeURL" placeholder="Enter YouTube Link Here">
-    <button onclick="loadVideo()">Load Video</button>
-    <div id="ytplayer"></div>
 
-    <script src="js/script.js"></script>
+<nav class="blue">
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Learning Learning</a>
+        <ul id="nav-mobile" class="right">
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Contents<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="youtube.html">Learn YouTube</a></li>
+</ul>
+
+<div class="container">
+    <h2>Welcome</h2>
+    <p>Welcome to Learning Learning. Choose a topic from the Contents menu to start learning.</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(elems, {});
+    });
+</script>
+
 </body>
 </html>
