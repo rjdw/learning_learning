@@ -24,4 +24,8 @@ __dev fyi, if you're using VSCode you can view md file with (Command K, then V)_
 ## Week Two
 - 04/01/2024
     - Richard 
+        - Added website for youtube embedded loading
+        - Google Materialize UI
+        - website hosted by github pages
+            - [Project Site](https://rjdw.github.io/learning_learning)
 

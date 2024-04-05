@@ -31,7 +31,7 @@ See [Progess Tracking](./progress.md)
     - Figure out timeline
     - Look into field
 - Week 2:
-    - pomodoro method
+    - implement pomodoro method
         - simplest methodology without need for ML
         - implement this first and see what's up after
     - github hosted website to start
