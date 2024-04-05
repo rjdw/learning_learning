@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Learning Learning - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 </head>
 <body>
 
@@ -12,7 +14,8 @@
     <div class="nav-wrapper container">
         <a href="#" class="brand-logo">Learning Learning</a>
         <ul id="nav-mobile" class="right">
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Contents<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!-- Updated Dropdown Trigger to use an icon -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">menu</i></a></li>
         </ul>
     </div>
 </nav>
@@ -20,18 +23,23 @@
 <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
     <li><a href="youtube.html">Learn YouTube</a></li>
+    <li><a href="">More Contents Here</a></li>
 </ul>
 
 <div class="container">
-    <h2>Welcome</h2>
-    <p>Welcome to Learning Learning. Choose a topic from the Contents menu to start learning.</p>
+    <p>Welcome to Learning on Learning.</p>
+    <p>Choose a format from the contents menu to start your optimized learning.</p>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.dropdown-trigger');
-        M.Dropdown.init(elems, {});
+        M.Dropdown.init(elems, {
+            coverTrigger: false, // Ensures dropdown appears below the trigger
+            alignment: 'right', // Adjusts the dropdown alignment
+            constrainWidth: false
+        });
     });
 </script>
 
