@@ -1,7 +1,6 @@
 # learning_learning
 
-We going to try and optimize online education.
-
+Using LLMs for medical coding
 
 
 
@@ -14,10 +13,31 @@ We going to try and optimize online education.
 
 <a id="description"></a>
 ## Description
-Current online learning platforms such as coursera, youtube, or khan academy are great resources that provide quality eduation for students such that they can learn material at their own time and pace. However, the material does not take the feedback from the user into account of the pace, material, and checkpoints and in place. Instead the student is expected to pace themselves throughout the entire process and the intermittent check ups may not sufficiently provide the student with more practice. Each student requires different learning strategies and as such, the teaching platform should also be able to adapt its teaching, material exposure, and questions to maximally teach the student.
 
-Using existing Coursera or YouTube courses.
-Have the ability to plan out lessons for available time. Review topics where bad performance is detected, meaning indicators that may mean the student is not absorbing information optimally. Attention tracking, give breaks. Rewind video, or review topics from earlier in lesson. Biometric monitoring, etc. Eventually, we want to be able to provide each student with a personalized learning plan of material, quizzes, etc. that will optimize their learning. Can even try to characterize what kind of learner they are, such as visual, verbal, or what types of exercises they respond best to so that when they can begin to build their own personalized plans for independent study.
+We are trying to fully automate the medical coding problem with LLMs.  
+Current medical coding uses computer assisted coding (CAC) to aid medical coders. However, these technologies are typically rule-based systems from old tech, and they provide low accuracy and require human supervision.  
+
+The goal is to be able to take input regarding 
+    
+    - Clinical Information
+        This includes detailed patient records such as doctors' notes, laboratory and test results, radiology reports, and other relevant medical documentation. These records provide the coder with the necessary clinical narratives and medical information regarding the patient's diagnosis, treatment, and procedures performed.
+
+    - Patient Information
+        This includes demographic details and insurance information that may affect coding decisions, especially for procedures covered under specific insurance plans.
+
+    - Hospital or Physician Specific Protocols
+        Coders may also receive guidelines and documentation standards specific to the hospital or physician's office where they work, which helps maintain consistency in coding practices.
+
+And receive accurate output regarding
+    
+    - Diagnosis Codes
+        From the clinical information, coders extract diagnoses and assign the appropriate ICD-10 codes. These codes are crucial for documentation and billing purposes.
+
+    - Procedure Codes
+        Coders use CPT (Current Procedural Terminology) codes for procedures and treatments provided during patient care. In settings where additional supplies, services, or equipment are involved, HCPCS (Healthcare Common Procedure Coding System) codes are also used.
+
+    - Other Relevant Codes
+        Depending on the context, coders might also use DRG (Diagnosis-Related Group) codes for inpatient hospital settings to categorize the episode of care for reimbursement purposes.
 
 <a id="progress"></a>
 ## Current Progress  
@@ -26,25 +46,12 @@ See [Progess Tracking](./progress.md)
 
 
  <a id="timeline"></a>
-## Timeline
-- Week 1:
-    - Figure out timeline
-    - Look into field
-- Week 2:
-    - implement pomodoro method
-        - simplest methodology without need for ML
-        - implement this first and see what's up after
-    - github hosted website to start
-        - simple to use
-        - free to host
 
-- Week 3:
+Goal 1:
+    We want to be able to reproduce the results from [Stupid Paper](https://ai.nejm.org/doi/full/10.1056/AIdbp2300040), where they attempt some LLM API calls to match codes with their descriptions.
+    This result is bad, and the authors did not put any effort beyond API calls to well-known LLM models.  
 
-- Week 4:
-
-- Week 5:
-
-- Week 6:
+    We want to be able to display this on the website. This may need to be a site hosted fr. Not a github site. We'll see.
 
 
 <a id="install"></a>
@@ -92,4 +99,7 @@ pip install -r requirements.txt
  <a id="links"></a>
 ## Futher Reading
 
-- [CMU Sphinx](https://cmusphinx.github.io/wiki/tutorial/)
+- [LLMs don't work for medical coding LOL](https://ai.nejm.org/doi/full/10.1056/AIdbp2300040)
+- [LLM working better for medical coding with Verifier model](https://arxiv.org/pdf/2311.13735)
+- [CAC Basics](https://www.foreseemed.com/computer-assisted-coding)
+- [Interesting Attempt at LLM Medical Coding](https://github.com/shamantechnology/med-coder-llm)
